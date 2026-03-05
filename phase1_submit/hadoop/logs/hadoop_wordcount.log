@@ -1,0 +1,28 @@
+2026-03-05 07:29:24,309 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-03-05 07:29:24,487 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-03-05 07:29:24,487 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory file:/home/rocky/bigdata_phase1/wc_out already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:164)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:277)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:143)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1678)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1675)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:423)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1899)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1675)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1696)
+	at org.apache.hadoop.examples.WordCount.main(WordCount.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.hadoop.util.ProgramDriver$ProgramDescription.invoke(ProgramDriver.java:71)
+	at org.apache.hadoop.util.ProgramDriver.run(ProgramDriver.java:144)
+	at org.apache.hadoop.examples.ExampleDriver.main(ExampleDriver.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:328)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:241)
